@@ -1,0 +1,132 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #968765;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+.content {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left; 
+    padding: 20px;
+    background: none; 
+    border: none; 
+    box-shadow: none;
+}
+
+h2 {
+    color: #968765; 
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.ingredients-list li,
+.steps li {
+    margin-bottom: 10px;
+}
+
+.ingredients-list input[type="checkbox"]:checked + span,
+.steps input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
+.smacznego {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #3c382c;
+    font-weight: bold;
+    text-align: center;
+}
+
+.smacznego h2 {
+    margin: 0;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .recipes {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+
+    .category-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-nav .category-button {
+        padding: 10px 20px; 
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipes {
+        grid-template-columns: 1fr;
+    }
+
+    .category-nav .category-button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    header {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
